@@ -1,0 +1,27 @@
+#maDiv1, #maDiv2 {
+  color: red;
+  font-size: 2em; }
+
+a {
+  text-decoration: none;
+  color: pink; }
+  div a {
+    color: green; }
+  div a:hover {
+    background-color: yellow; }
+
+#maDiv2 {
+  background-color: whitesmoke;
+  padding: 10px;
+  max-width: 500px; }
+
+#maDiv1 {
+  border: 1px solid red; }
+
+#maDiv2 {
+  border: 1px solid red; }
+
+#maDiv3 {
+  border: 1px solid red; }
+
+/*# sourceMappingURL=main.css.map */

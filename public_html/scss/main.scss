@@ -1,0 +1,40 @@
+$couleurBaseLiens : pink;
+$uniteLargeur : 100;
+
+@mixin couleur($couleur){
+    color: $couleur;
+}
+
+%typo{
+    color: red;
+    font-size: 2em;
+}
+
+@function fois5($valeur){
+    @return $valeur*5;
+}
+
+a{
+    text-decoration: none;
+    @include couleur($couleurBaseLiens);
+    div &{
+        color: green;
+    }
+    div &:hover{
+        background-color: yellow;
+    }
+}
+#maDiv1{
+    @extend %typo;
+}
+#maDiv2{
+    @extend %typo;
+    background-color: whitesmoke;
+    padding: 10px;
+    max-width: fois5($uniteLargeur)+px;
+}
+@for $i from 1 through 3{
+    #maDiv#{$i}{
+        border: 1px solid red;
+    }
+}

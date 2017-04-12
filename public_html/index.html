@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+/*            #maDiv{
+                position: relative;
+                width: 150px;
+                height: 150px;
+                line-height: 150px;
+                text-align: center;
+                cursor: pointer;
+                background-color: green;
+                padding: 5px;
+                border-radius: 50%;
+                transition: all 1s;
+                
+            }*/
+/*            #maDiv:hover{
+                font-weight: bold;
+                transform: scale(1.2);
+            }*/
+        </style>
+    </head>
+    <body>
+        <div id="maDiv1">
+            Click me Alexandre!
+            <a href="#">Lien dans maDiv</a>
+        </div>
+        <a href="#">Test</a>
+        <hr>
+        <div id="maDiv2">
+            Click me!
+            <a href="#">Lien dans maDiv2</a>
+        </div>
+        <hr>
+        <div id="maDiv3">
+            Click me!
+            <a href="#">Lien dans maDiv3</a>
+        </div>
+        <div id="maDiv3">
+            Click me!
+            <a href="#">Lien dans maDiv3</a>
+        </div>
+        <script>
+            document.querySelector("#maDiv").onclick = function(){
+                
+                var xpos = this.style.left;
+                console.log(xpos);
+                xpos += 200;
+                this.style.left = xpos+"px";
+            };
+        </script>
+    </body>
+</html>
